@@ -96,27 +96,16 @@ descomprimir en  `/home/[ user  ]`
  agregar:
 ~~~
 [Desktop Entry]
-
 Encoding=UTF-8
-
 Version=1.0
-
 Type=Application
-
 Name=Postman
-
 Icon=/home/[  your username  ]/Postman/app/resources/app/assets/icon.png
-
 Path=/home/[  your username  ]/Postman
-
 Exec=/home/[  your username  ]/Postman/Postman
-
 StartupNotify=false
-
 StartupWMClass=Postman
-
 OnlyShowIn=Unity;GNOME;
-
 X-UnityGenerated=true
 ~~~
 

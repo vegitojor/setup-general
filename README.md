@@ -44,6 +44,17 @@ Instalar Java (desde sdkman)
 
 `sdk install java <version de java elegida>`
 
+
+### **Gradle**
+fuente: https://gradle.org/install/
+
+`sdk install gradle 5.6.4`
+
+si falla:
+
+`sudo rm -r .gradle`
+
+
 # Programas necesarios (opcional)
 
 ### **Intellij Idea**

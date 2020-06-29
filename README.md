@@ -94,7 +94,8 @@ descomprimir en  `/home/[ user  ]`
 `sudo gedit .local/share/applications/postman.desktop`
 
  agregar:
->[Desktop Entry]
+~~~
+[Desktop Entry]
 
 Encoding=UTF-8
 
@@ -117,6 +118,7 @@ StartupWMClass=Postman
 OnlyShowIn=Unity;GNOME;
 
 X-UnityGenerated=true
+~~~
 
 
 guardar

@@ -3,6 +3,8 @@
 fuente: https://platzi.com/tutoriales/1154-wordpress/1634-instalar-lamp-stack-en-linux-ubuntu-1404/
 fuente: https://askubuntu.com/questions/772397/mbstring-is-missing-for-phpmyadmin-in-ubuntu-16-04
 `sudo apt-get install apache2 `
+
+
 `sudo add-apt-repository ppa:ondrej/php `
 `sudo apt-get update `
 `sudo apt-get install php7.0 `

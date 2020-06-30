@@ -31,6 +31,20 @@ info (para listar los paquetes de php 7.0):
 `apt-cache pkgnames | grep php7.0`
 
 
+Para dar parmisos a phpMy-admin:
+
+`sudo gedit /etc/apache2/apache2.conf`
+
+agregar 
+~~~
+Include /etc/phpmyadmin/apache.conf
+~~~
+
+`sudo service apache2 restart`
+
+
+
+
 # Programas requeridos
 
 ### **SDKMAN**
@@ -53,6 +67,11 @@ fuente: https://gradle.org/install/
 si falla:
 
 `sudo rm -r .gradle`
+
+### **Redis**
+fuente: 
+
+`sudo apt install redis-server`
 
 
 # Programas necesarios (opcional)

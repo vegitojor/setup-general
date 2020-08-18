@@ -1,9 +1,6 @@
 ##### SO -> Debian. Ubuntu. derivados
 
-Elementary OS
-fusuma - para gestos del panel tactil
-wingpanel - para barra superior
-por problemas de bluetooth (respuesta 2) https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed
+
 
 ### LAMP (linux, apache, php, mysql)
 fuente: https://platzi.com/tutoriales/1154-wordpress/1634-instalar-lamp-stack-en-linux-ubuntu-1404/
@@ -154,3 +151,52 @@ guardar
 https://github.com/redbeestudios/vigilant-guide/#docker
 
 
+# Elementary OS
+
+fusuma - para gestos del panel tactil
+wingpanel - para barra superior
+por problemas de bluetooth (respuesta 2) https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed
+
+~~~
+sudo bluetoothctl
+[bluetooth]# power off
+[bluetooth]# power on
+[bluetooth]# scan on
+(Cuando aparesca la direccion mack)
+[bluetooth]# scan off
+[bluetooth]# connect XX:XX:XX:XX:XX:XX (your bluetooth address)
+[Arc Touch Mouse SE]# trust XX:XX:XX:XX:XX:XX 
+[Arc Touch Mouse SE]# pair XX:XX:XX:XX:XX:XX 
+[bluetooth]# quit
+
+
+sudo bluetoothctl
+[bluetooth]# power on
+[bluetooth]# agent on
+[bluetooth]# default-agent
+[bluetooth]# scan on
+[NEW] Device XX:XX:XX:XX:XX:XX David's AirPods
+[bluetooth]# scan off
+[bluetooth]# trust XX:XX:XX:XX:XX:XX
+[bluetooth]# pair XX:XX:XX:XX:XX:XX
+Attempting to pair with XX:XX:XX:XX:XX:XX
+[CHG] Device XX:XX:XX:XX:XX:XX Connected: yes
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX UUIDs: ... 
+[CHG] Device XX:XX:XX:XX:XX:XX Paired: yes
+Pairing successful
+[CHG] Device XX:XX:XX:XX:XX:XX Connected: no
+[bluetooth]# connect XX:XX:XX:XX:XX:XX
+Attempting to connect to XX:XX:XX:XX:XX:XX
+[CHG] Device XX:XX:XX:XX:XX:XX Connected: yes
+Connection successful
+[bluetooth]# quit
+
+
+~~~

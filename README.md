@@ -1,4 +1,10 @@
 ##### SO -> Debian. Ubuntu. derivados
+
+Elementary OS
+fusuma - para gestos del panel tactil
+wingpanel - para barra superior
+por problemas de bluetooth (respuesta 2) https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed
+
 ### LAMP (linux, apache, php, mysql)
 fuente: https://platzi.com/tutoriales/1154-wordpress/1634-instalar-lamp-stack-en-linux-ubuntu-1404/
 

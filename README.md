@@ -1,5 +1,13 @@
 ##### SO -> Debian. Ubuntu. derivados
 
+### SETING DEL .bashrc
+~~~
+#Configuracion de la terminal
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+PS1='\[\e[0;32m\]Vegitojor\$\W -> $(parse_git_branch) \[\e[1;37m\]'
+~~~
 
 
 ### LAMP (linux, apache, php, mysql)

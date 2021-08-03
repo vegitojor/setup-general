@@ -2,6 +2,16 @@
 
 ### SETING DEL .bashrc
 ~~~
+# Git aliases
+alias Aon-backend='cd workspace/Aon/backend/mga-backend/'
+alias gs='git status'
+alias gb='git branch'
+alias gch='git checkout '
+alias gchb='git checkout -b '
+alias gp='git pull origin '
+alias gpp='git push origin '
+alias gc='git commit -m '
+
 #Configuracion de la terminal
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
